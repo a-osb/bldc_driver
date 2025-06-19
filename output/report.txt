@@ -1,0 +1,15 @@
+Warning: Width correction constrained.  The width correction value must be in the range of [-0.099999 mm; -0.000002 mm] for the current design rules.
+Plotted to '/home/aosb/repos/bldc_driver/bldc_driver-F_Cu.gbr'.
+Plotted to '/home/aosb/repos/bldc_driver/bldc_driver-In1_Cu.gbr'.
+Plotted to '/home/aosb/repos/bldc_driver/bldc_driver-In2_Cu.gbr'.
+Plotted to '/home/aosb/repos/bldc_driver/bldc_driver-B_Cu.gbr'.
+Plotted to '/home/aosb/repos/bldc_driver/bldc_driver-F_Paste.gbr'.
+Plotted to '/home/aosb/repos/bldc_driver/bldc_driver-B_Paste.gbr'.
+Plotted to '/home/aosb/repos/bldc_driver/bldc_driver-F_Silkscreen.gbr'.
+Plotted to '/home/aosb/repos/bldc_driver/bldc_driver-B_Silkscreen.gbr'.
+Plotted to '/home/aosb/repos/bldc_driver/bldc_driver-F_Mask.gbr'.
+Plotted to '/home/aosb/repos/bldc_driver/bldc_driver-B_Mask.gbr'.
+Plotted to '/home/aosb/repos/bldc_driver/bldc_driver-Edge_Cuts.gbr'.
+Created Gerber job file '/home/aosb/repos/bldc_driver/bldc_driver-job.gbrjob'.
+Info: Done.
+Info: Done.

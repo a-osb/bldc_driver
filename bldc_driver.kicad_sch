@@ -3356,27 +3356,47 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Oscillator:SiT8008xx-1x-xxE"
+		(symbol "Oscillator:ECS-2520MV-xxx-xx"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Y"
-				(at 4.064 8.89 0)
+				(at -5.08 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "SiT8008xx-1x-xxE"
-				(at 12.446 6.858 0)
+			(property "Value" "ECS-2520MV-xxx-xx"
+				(at 1.27 -6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" "Oscillator:Oscillator_SMD_SiT_PQFN-4Pin_2.5x2.0mm"
+			(property "Footprint" "Oscillator:Oscillator_SMD_ECS_2520MV-xxx-xx-4Pin_2.5x2.0mm"
+				(at 11.43 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ecsxtal.com/store/pdf/ECS-2520MV.pdf"
+				(at -4.445 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "HCMOS Crystal Clock Oscillator, 2.5x2.0 mm SMD"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3385,7 +3405,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.sitime.com/support/resource-library/datasheets/sit8008-datasheet"
+			(property "ki_keywords" "Crystal Clock Oscillator ECS SMD"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3394,7 +3414,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "SiTime Low Power Mems programmable oscillator, 1MHz to 110MHz, PQFN-4, 2.5x2.0mm (with output enable pin)"
+			(property "ki_fp_filters" "Oscillator*SMD*ECS*2520MV*2.5x2.0mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3403,28 +3423,10 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Mems"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*PQFN*2.5x2.0mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SiT8008xx-1x-xxE_0_1"
+			(symbol "ECS-2520MV-xxx-xx_0_1"
 				(rectangle
-					(start -5.08 5.08)
-					(end 5.08 -5.08)
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -3435,8 +3437,8 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -0.762) (xy -1.016 -0.762) (xy -1.016 0.762) (xy -0.508 0.762) (xy -0.508 -0.762) (xy 0 -0.762)
-						(xy 0 0.762) (xy 0.508 0.762) (xy 0.508 -0.762) (xy 0.762 -0.762)
+						(xy -4.445 2.54) (xy -3.81 2.54) (xy -3.81 3.81) (xy -3.175 3.81) (xy -3.175 2.54) (xy -2.54 2.54)
+						(xy -2.54 3.81) (xy -1.905 3.81) (xy -1.905 2.54)
 					)
 					(stroke
 						(width 0)
@@ -3447,11 +3449,11 @@
 					)
 				)
 			)
-			(symbol "SiT8008xx-1x-xxE_1_1"
+			(symbol "ECS-2520MV-xxx-xx_1_1"
 				(pin input line
-					(at -7.62 0 0)
+					(at -10.16 0 0)
 					(length 2.54)
-					(name "OE"
+					(name "Tri-State"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3469,7 +3471,7 @@
 				(pin power_in line
 					(at 0 7.62 270)
 					(length 2.54)
-					(name "Vdd"
+					(name "VDD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3503,7 +3505,7 @@
 					)
 				)
 				(pin output line
-					(at 7.62 0 180)
+					(at 10.16 0 180)
 					(length 2.54)
 					(name "OUT"
 						(effects
@@ -6312,12 +6314,20 @@
 		(uuid "fc922315-c572-4016-b911-f1d6180977ab")
 	)
 	(no_connect
+		(at 182.88 80.01)
+		(uuid "37c9d22e-905a-4fe0-9306-288bb3d3139e")
+	)
+	(no_connect
 		(at 147.32 113.03)
 		(uuid "3ccbfad4-3082-4000-8c26-43ba9a0c6c78")
 	)
 	(no_connect
 		(at 259.08 189.23)
 		(uuid "4b5f6a9d-03f1-4079-bf14-70dbe9120e26")
+	)
+	(no_connect
+		(at 135.89 77.47)
+		(uuid "58115800-f1b9-4806-a25c-121da8578fad")
 	)
 	(no_connect
 		(at 259.08 184.15)
@@ -6487,16 +6497,6 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 80.01) (xy 171.45 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0cfaea7e-8ae9-4618-881c-efa19c38b43e")
-	)
-	(wire
-		(pts
 			(xy 373.38 167.64) (xy 377.19 167.64)
 		)
 		(stroke
@@ -6657,7 +6657,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 100.33) (xy 236.22 100.33)
+			(xy 233.68 100.33) (xy 245.11 100.33)
 		)
 		(stroke
 			(width 0)
@@ -6977,7 +6977,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 67.31) (xy 148.59 69.85)
+			(xy 146.05 67.31) (xy 146.05 69.85)
 		)
 		(stroke
 			(width 0)
@@ -7327,16 +7327,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 90.17) (xy 165.1 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55661ab2-120d-4b58-97d6-122942c15aad")
-	)
-	(wire
-		(pts
 			(xy 220.98 181.61) (xy 233.68 181.61)
 		)
 		(stroke
@@ -7607,16 +7597,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 77.47) (xy 139.7 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c637787-d3e5-4994-ac3f-0607f2e393b6")
-	)
-	(wire
-		(pts
 			(xy 303.53 76.2) (xy 303.53 78.74)
 		)
 		(stroke
@@ -7757,7 +7737,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 67.31) (xy 148.59 67.31)
+			(xy 144.78 67.31) (xy 146.05 67.31)
 		)
 		(stroke
 			(width 0)
@@ -7814,26 +7794,6 @@
 			(type default)
 		)
 		(uuid "79c24a4e-d5a7-4853-97ee-c130e084bce7")
-	)
-	(wire
-		(pts
-			(xy 139.7 77.47) (xy 140.97 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ad8f2d5-1952-475b-8274-346a30dd87b7")
-	)
-	(wire
-		(pts
-			(xy 243.84 100.33) (xy 245.11 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b2e55ff-3db4-41bb-97c6-548b268f1c5a")
 	)
 	(wire
 		(pts
@@ -8087,7 +8047,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 95.25) (xy 236.22 95.25)
+			(xy 233.68 95.25) (xy 245.11 95.25)
 		)
 		(stroke
 			(width 0)
@@ -8397,16 +8357,6 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 90.17) (xy 165.1 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1585cd3-8036-4e24-ab1a-26cf89f5b403")
-	)
-	(wire
-		(pts
 			(xy 285.75 78.74) (xy 303.53 78.74)
 		)
 		(stroke
@@ -8454,16 +8404,6 @@
 			(type default)
 		)
 		(uuid "b625e84b-da48-4901-b9d6-8ecd34b73f25")
-	)
-	(wire
-		(pts
-			(xy 243.84 95.25) (xy 245.11 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b63d43bf-29eb-45d8-968b-28e6178f18eb")
 	)
 	(wire
 		(pts
@@ -9074,16 +9014,6 @@
 			(type default)
 		)
 		(uuid "f9fd808f-254d-4355-8f92-1d6006106f0d")
-	)
-	(wire
-		(pts
-			(xy 179.07 80.01) (xy 182.88 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb76c3c8-dcab-4ac4-96cb-88b8b1df62f3")
 	)
 	(wire
 		(pts
@@ -11381,6 +11311,16 @@
 			"EBrJMOJHCCGEEEJoJPv/db1/GpOlmzMAAAAASUVORK5CYII="
 		)
 	)
+	(label "CLK_16MHz"
+		(at 160.02 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "04b7c21b-bad7-49da-a91e-1b5c408295ab")
+	)
 	(global_label "SWD_CLK"
 		(shape output)
 		(at 151.13 107.95 0)
@@ -12593,7 +12533,7 @@
 	)
 	(global_label "3V3"
 		(shape input)
-		(at 147.32 67.31 180)
+		(at 144.78 67.31 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12603,7 +12543,7 @@
 		)
 		(uuid "b27b053a-f142-4ecb-afce-30daad5c5621")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.8272 67.31 0)
+			(at 138.2872 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13165,7 +13105,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 148.59 85.09 0)
+		(at 146.05 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13173,7 +13113,7 @@
 		(dnp no)
 		(uuid "00198d16-4532-4d52-a711-0b64f341c9b2")
 		(property "Reference" "#PWR09"
-			(at 148.59 91.44 0)
+			(at 146.05 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13182,7 +13122,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 154.178 87.122 0)
+			(at 151.638 87.122 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13191,7 +13131,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 85.09 0)
+			(at 146.05 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13200,7 +13140,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 85.09 0)
+			(at 146.05 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13209,7 +13149,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 148.59 85.09 0)
+			(at 146.05 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14072,9 +14012,9 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "1f2eae0a-25c3-46a3-b049-5be6e3160393")
 		(property "Reference" "J3"
 			(at 374.142 189.992 0)
@@ -14093,7 +14033,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 370.84 195.58 0)
 			(effects
 				(font
@@ -14155,7 +14095,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "120R"
 			(at 64.262 195.58 90)
 			(effects
 				(font
@@ -14269,79 +14209,6 @@
 			(project "bldc_driver"
 				(path "/1f9b1871-7153-4219-ad08-e8bcbaaef4fd"
 					(reference "C_VIN_AVDD2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Oscillator:SiT8008xx-1x-xxE")
-		(at 148.59 77.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "25749ce0-419d-4dd0-9b19-5d26867ad193")
-		(property "Reference" "Y1"
-			(at 141.732 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SiT8008xx-1x-xxE"
-			(at 150.622 84.074 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Oscillator:Oscillator_SMD_SiT_PQFN-4Pin_2.5x2.0mm"
-			(at 148.59 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.sitime.com/support/resource-library/datasheets/sit8008-datasheet"
-			(at 148.59 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SiTime Low Power Mems programmable oscillator, 1MHz to 110MHz, PQFN-4, 2.5x2.0mm (with output enable pin)"
-			(at 148.59 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "907fc3a3-3ab6-4bcc-b8e6-8a46d90529a3")
-		)
-		(pin "1"
-			(uuid "b538a086-ba17-424f-818a-bc956c647bc9")
-		)
-		(pin "2"
-			(uuid "3eb8720b-941e-4b67-9b08-13bd52bb95d6")
-		)
-		(pin "4"
-			(uuid "36cedf5a-8b86-4952-9637-06b9721ca840")
-		)
-		(instances
-			(project ""
-				(path "/1f9b1871-7153-4219-ad08-e8bcbaaef4fd"
-					(reference "Y1")
 					(unit 1)
 				)
 			)
@@ -14702,7 +14569,7 @@
 		(at 158.75 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -15344,6 +15211,14 @@
 				(hide yes)
 			)
 		)
+		(property "Rating" "16V"
+			(at 138.938 191.516 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fab04182-28cf-45db-a454-5e96bf94af78")
 		)
@@ -15427,76 +15302,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 240.03 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "509668de-1ed5-4b6b-b90f-f21ce870ebd6")
-		(property "Reference" "JP3"
-			(at 240.03 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 240.03 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
-			(at 240.03 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 240.03 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 240.03 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "dbe12bd9-6b16-4568-bb6e-3ce1a1af7469")
-		)
-		(pin "1"
-			(uuid "754751e2-1dcc-404e-9bd2-3df42dafa226")
-		)
-		(instances
-			(project ""
-				(path "/1f9b1871-7153-4219-ad08-e8bcbaaef4fd"
-					(reference "JP3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 69.85 199.39 90)
 		(unit 1)
@@ -15513,7 +15318,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "120R"
 			(at 64.262 198.12 90)
 			(effects
 				(font
@@ -15850,7 +15655,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "5.1k"
 			(at 166.37 49.5299 0)
 			(effects
 				(font
@@ -15929,7 +15734,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 201.6252 57.15 0)
 			(effects
 				(font
@@ -16112,9 +15917,9 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "7c24d4e1-0cb0-4819-91b8-7f71b1e79716")
 		(property "Reference" "J6"
 			(at 318.008 101.6 0)
@@ -16132,7 +15937,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 316.23 109.22 0)
 			(effects
 				(font
@@ -16182,7 +15987,7 @@
 		(at 38.1 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "7cd3d95f-94b0-43be-bb76-800091a1e21b")
@@ -16314,7 +16119,7 @@
 		(at 158.75 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -16539,7 +16344,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 353.822 71.12 90)
 			(effects
 				(font
@@ -16598,7 +16403,7 @@
 				)
 			)
 		)
-		(property "Value" "UA78M33QDCYRQ1"
+		(property "Value" "UA78M33QDCYRG4Q1"
 			(at 58.42 92.202 0)
 			(effects
 				(font
@@ -16982,7 +16787,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 146.558 172.466 90)
 			(effects
 				(font
@@ -17028,73 +16833,6 @@
 			(project ""
 				(path "/1f9b1871-7153-4219-ad08-e8bcbaaef4fd"
 					(reference "C_VIN_AVDD1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 175.26 80.01 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9d21c73d-c5d0-473b-90b6-df901f4934df")
-		(property "Reference" "R10"
-			(at 173.482 82.296 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 177.8 82.296 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 175.26 81.788 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 175.26 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 175.26 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0fa155cc-729b-4a93-a942-113831556a8f")
-		)
-		(pin "2"
-			(uuid "6ce94061-c73b-4b29-8cd1-0e8139627e82")
-		)
-		(instances
-			(project "bldc_driver"
-				(path "/1f9b1871-7153-4219-ad08-e8bcbaaef4fd"
-					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -17326,7 +17064,7 @@
 		(at 38.1 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -18313,7 +18051,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "120R"
 			(at 64.262 193.04 90)
 			(effects
 				(font
@@ -18719,7 +18457,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "5.1k"
 			(at 327.406 77.216 90)
 			(effects
 				(font
@@ -18854,8 +18592,8 @@
 				)
 			)
 		)
-		(property "Value" "0.1u"
-			(at 67.056 189.23 90)
+		(property "Value" "100n"
+			(at 68.834 189.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18887,6 +18625,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Rating" "6.3V"
+			(at 68.834 191.008 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -19048,9 +18794,9 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c7d48821-03c0-4fa3-b953-aaa3a00d943d")
 		(property "Reference" "J5"
 			(at 371.348 158.75 0)
@@ -19389,76 +19135,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 240.03 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ce7846f5-f597-4cd0-afd3-0f7f5fadf0c3")
-		(property "Reference" "JP4"
-			(at 240.03 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 240.03 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
-			(at 240.03 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 240.03 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 240.03 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "06a0d7ff-7aee-4fc7-a8c4-caaa9139d1b7")
-		)
-		(pin "1"
-			(uuid "6d75c43b-2fb2-40e0-8d73-f6f36e689185")
-		)
-		(instances
-			(project "bldc_driver"
-				(path "/1f9b1871-7153-4219-ad08-e8bcbaaef4fd"
-					(reference "JP4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 129.54 171.45 90)
 		(unit 1)
@@ -19736,9 +19412,9 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d647200d-f83c-44be-b399-f1f67cf68095")
 		(property "Reference" "J7"
 			(at 342.138 101.6 0)
@@ -19756,7 +19432,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 341.63 109.22 0)
 			(effects
 				(font
@@ -20084,11 +19760,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Oscillator:ECS-2520MV-xxx-xx")
+		(at 146.05 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e2d534c3-625d-44e3-9ceb-73fec3e50484")
+		(property "Reference" "Y1"
+			(at 165.1 71.0498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ECS-2520MV-160-CN"
+			(at 133.096 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "bldc_driver:Oscillator_SMD_ECS_2520MV-xxx-xx-4Pin_2.5x2.0mm"
+			(at 157.48 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ecsxtal.com/store/pdf/ECS-2520MV.pdf"
+			(at 141.605 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "HCMOS Crystal Clock Oscillator, 2.5x2.0 mm SMD"
+			(at 146.05 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "37361f7d-1f15-4d75-b98c-e5b7bbb1d138")
+		)
+		(pin "1"
+			(uuid "a7cdb3ef-5515-4bcc-8d9a-892815109224")
+		)
+		(pin "3"
+			(uuid "933fb658-a889-4708-9fc9-2bd6bc95a185")
+		)
+		(pin "4"
+			(uuid "2f465a1d-3fef-4cbb-8a34-c930b957eb9f")
+		)
+		(instances
+			(project ""
+				(path "/1f9b1871-7153-4219-ad08-e8bcbaaef4fd"
+					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
 		(at 158.75 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -20167,7 +19916,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 139.192 195.326 90)
 			(effects
 				(font
@@ -20450,7 +20199,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 159.766 170.434 90)
 			(effects
 				(font
@@ -20520,7 +20269,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "5.1k"
 			(at 88.9 66.0399 0)
 			(effects
 				(font
