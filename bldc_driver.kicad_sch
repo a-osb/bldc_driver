@@ -13223,6 +13223,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rating" "6.3V"
+			(at 176.53 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "203033c5-8901-4c14-915e-5f942e286773")
 		)
@@ -13353,6 +13362,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 50.8 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "50V"
 			(at 50.8 64.77 0)
 			(effects
 				(font
@@ -13922,6 +13940,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rating" "6.3V"
+			(at 57.15 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "aab1b89d-2520-432c-b947-8c4f958d8a4d")
 		)
@@ -13983,6 +14010,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 66.04 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "50V"
 			(at 66.04 64.77 0)
 			(effects
 				(font
@@ -14192,6 +14228,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 152.4 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "50V"
+			(at 152.4 158.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14475,6 +14520,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 165.1 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "50V"
+			(at 165.1 158.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15761,6 +15815,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rating" "6.3V"
+			(at 200.66 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a238ff74-9029-473c-bf7a-b6303f2b6696")
 		)
@@ -16233,6 +16296,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rating" "6.3V"
+			(at 53.34 167.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fd12101f-e63e-4cce-96c5-2105694142ba")
 		)
@@ -16294,6 +16366,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 76.2 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "50V"
 			(at 76.2 64.77 0)
 			(effects
 				(font
@@ -16579,6 +16660,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rating" "50V"
+			(at 71.12 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "896ff174-7961-4c49-bd6b-cd79459c613e")
 		)
@@ -16754,6 +16844,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rating" "6.3V"
+			(at 285.75 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "12bf87ca-14ae-42e8-8b81-b5a6a2332c10")
 		)
@@ -16816,6 +16915,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 146.05 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "50V"
+			(at 146.05 158.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17238,6 +17346,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 50.8 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "6.3V"
 			(at 50.8 205.74 0)
 			(effects
 				(font
@@ -18424,6 +18541,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rating" "50V"
+			(at 55.88 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "46917ed1-751c-4c2f-8c6e-408308302b20")
 		)
@@ -18773,6 +18899,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rating" "6.3V"
+			(at 63.5 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "95419db4-4bf9-4639-a1fa-2a425d6ad89f")
 		)
@@ -18906,6 +19041,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 67.31 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "50V"
 			(at 67.31 101.6 0)
 			(effects
 				(font
@@ -19119,6 +19263,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rating" "50V"
+			(at 60.96 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "960f2966-b1d4-49b7-872c-52947cf70a8d")
 		)
@@ -19317,6 +19470,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 228.6 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "6.3V"
 			(at 228.6 170.18 0)
 			(effects
 				(font
@@ -20228,6 +20390,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 158.75 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "50V"
+			(at 158.75 158.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
