@@ -5827,46 +5827,6 @@
 		)
 		(uuid "1319c749-dc0a-4d1d-ac1e-2d6fbf84d9f2")
 	)
-	(text_box "TODO\n- horizontal push button for boot/reset\n- Test pads: 3v3, Vin, Encoder PWM, nRST, Boot0\n- Board shape\n\nDONE\n- Vsens voltage divider\n- switch to buck converter (instead of LDO) if low cost - won't do\n- Upgrade AS5048 to AS5047\n- Separate AGND from PGND in DRV8317? (as per user guide)\n- CAN connector, UART connector\n- bulk capacitance\n- ESD - TVS diodes - 5V or 3v3 for USB lines?\n- Boot0 to Gnd\n- Push button for reset\n- Status LEDs\n- Programming header\n- CAN transeiver from datasheet, has layout guide: https://www.ti.com/lit/ds/symlink/sn65hvd230.pdf\n- Encoder from datasheet\n- Decoupling capacitors"
-		(exclude_from_sim no)
-		(at 22.86 -50.8 0)
-		(size 73.66 45.72)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "b15372a5-7a71-400e-b2c8-c3313479511c")
-	)
-	(text_box "Notes:\n- C_VM2 - okay to use ceramic instead of electrolytic?\n- C_AVDD value chosen for no external load\n- Connect PGND to seperate ground plane\n"
-		(exclude_from_sim no)
-		(at -33.02 133.35 0)
-		(size 31.75 22.86)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "dc94056f-e998-49fd-841e-5a28354b32c8")
-	)
 	(text_box "Only connect R_term if the device is at the end of the bus"
 		(exclude_from_sim no)
 		(at 359.41 46.99 0)
@@ -9849,7 +9809,7 @@
 		)
 	)
 	(image
-		(at 157.48 -29.21)
+		(at 187.96 -30.48)
 		(scale 1.11103)
 		(uuid "b1b35251-e522-4e9d-b7ba-e66829275323")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAooAAAJrCAIAAADoDiX8AAAAA3NCSVQICAjb4U/gAAAgAElEQVR4"
@@ -10759,7 +10719,7 @@
 		)
 	)
 	(image
-		(at 466.09 99.06)
+		(at 233.68 308.61)
 		(uuid "efa90961-0528-46c9-8779-58bd684eea53")
 		(data "iVBORw0KGgoAAAANSUhEUgAAA/sAAADhCAIAAAAYvzINAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4"
 			"nOzdf1wTZ9ov/msIMhGaIDZRbAzWCBQQBAuiaxb3McoeAfcUsV+MdhV9qugWxbMiLrVwil+peqTY"
@@ -12245,28 +12205,6 @@
 			)
 		)
 	)
-	(global_label "PB2"
-		(shape bidirectional)
-		(at 375.92 193.04 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "90049bba-751f-472a-861c-cc35ebb79027")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 383.766 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "USART_RX"
 		(shape input)
 		(at 245.11 100.33 0)
@@ -12373,6 +12311,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PB2"
+		(shape bidirectional)
+		(at 375.92 195.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9dd00341-4e69-4990-9e2c-1200b99d9399")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 383.766 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -12487,6 +12447,28 @@
 			)
 		)
 	)
+	(global_label "PB4"
+		(shape bidirectional)
+		(at 375.92 193.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a9d36862-83b0-4979-af8e-5bee64bd0934")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 383.766 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "USB_D-"
 		(shape bidirectional)
 		(at 245.11 92.71 0)
@@ -12549,28 +12531,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "PB4"
-		(shape bidirectional)
-		(at 375.92 195.58 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b662ea80-cea9-4001-8490-53d3ad6e8349")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 383.766 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -14208,7 +14168,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 151.4348 154.94 0)
 			(effects
 				(font
@@ -14500,7 +14460,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 166.0652 162.56 0)
 			(effects
 				(font
@@ -19167,7 +19127,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
 			(at 158.75 59.69 0)
 			(effects
 				(font
